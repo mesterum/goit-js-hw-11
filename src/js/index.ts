@@ -58,7 +58,7 @@ const callback: IntersectionObserverCallback = (entries, observer) => {
   if (!entries[0].isIntersecting) return
   console.log("isIntersecting")
   // Infinite scrolling
-  // loadMore()
+  loadMore()
 }
 const watchMe = new IntersectionObserver(callback, { rootMargin: "0% 0% 80%" });
 const loadMoreButton = document.querySelector("button.load-more") as HTMLButtonElement
